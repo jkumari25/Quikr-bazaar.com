@@ -25,7 +25,7 @@ const ProductDetail = () => {
             paddingY="90px"
             h="fit-content"
             boxSize="border-box"
-            // border="3px solid yellow"
+           
 
             bg="#f8f8f8">
 
@@ -33,7 +33,7 @@ const ProductDetail = () => {
 
                 width={["100%", "90%", "75%"]}
                 border={"3px solid brown"}
-                // alignItems="center"
+               
                 spacing={["10", "20", "25"]}
                 margin={"auto"}
                 gridTemplateColumns={columns}
