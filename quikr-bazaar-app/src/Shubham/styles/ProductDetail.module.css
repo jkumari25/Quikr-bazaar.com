@@ -1,0 +1,15 @@
+.hvr {
+   color: white;
+   background: linear-gradient(rgb(207, 219, 245), transparent);
+   background-color: rgb(0, 21, 255);
+}
+
+.hvr:hover,
+.hvr:focus,
+.hvr:active {
+   background: linear-gradient(rgb(207, 219, 245), transparent);
+   background-color: rgb(0, 21, 255);
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1);
+   cursor: pointer;
+}
