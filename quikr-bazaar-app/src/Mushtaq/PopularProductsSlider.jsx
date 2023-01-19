@@ -38,7 +38,7 @@ const productsAr = [
 const PopularProductsSlider = () => {
   return (
     <Box>
-      <h1>Most Popular Products</h1>
+      <h1>Most Popular Product</h1>
       <Carousel responsive={responsive}>
         {
           productsAr.map((el) => {
