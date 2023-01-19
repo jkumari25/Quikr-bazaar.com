@@ -51,7 +51,7 @@ const ProductDetail = () => {
                         h='fit-content'
                         boxSizing="border-box"
 
-                        // border={"8px solid black"}
+                        border={"8px solid black"}
                         id='image-box'
                         paddingY="20%"
                         paddingX="10%"
