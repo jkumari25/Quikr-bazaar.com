@@ -65,7 +65,7 @@ const ProductDetail = () => {
                         border={"4px solid pink "}
                         justifyContent="center"
                         alignItems="center"
-                        width="100%"
+                        // width="100%"
 
                     >
 
