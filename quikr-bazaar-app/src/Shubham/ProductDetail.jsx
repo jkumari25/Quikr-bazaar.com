@@ -26,7 +26,7 @@ const ProductDetail = () => {
             h="fit-content"
             boxSize="border-box"
            
-
+            // border="2px solid red"
             bg="#f8f8f8">
 
             <SimpleGrid
