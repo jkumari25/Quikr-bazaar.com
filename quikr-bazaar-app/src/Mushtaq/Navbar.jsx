@@ -15,12 +15,18 @@ import {
   SimpleGrid,
   Img,
   useBreakpointValue,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
 } from "@chakra-ui/react";
 import { SlMenu } from "react-icons/sl";
 import { CiLocationOn, CiSearch } from "react-icons/ci";
 import { FiChevronDown } from "react-icons/fi";
 import { VscAccount } from "react-icons/vsc";
 import RapidGrab from "./rapid_grab.jpg";
+import { ChevronDownIcon } from "@chakra-ui/icons";
+import { useNavigate } from "react-router";
 
 export const Navbar = () => {
   const columns = useBreakpointValue({
@@ -29,6 +35,7 @@ export const Navbar = () => {
     lg: "12%50%30%",
   });
 
+  const navigate=useNavigate();
   return (
     <Box
       style={{ fontFamily: "ProximaNova-bold,Arial,Helvetica,sans-serif" }}
@@ -73,8 +80,23 @@ export const Navbar = () => {
           <Button _hover={"none"} bg={"none"} >
             <VscAccount size={22}  />
           </Button>
-          <Button _hover={"none"} bg={"none"} width="0.5rem" >
-            Login/Register
+            <Menu>
+  {({ isOpen }) => (
+    <>
+      <MenuButton 
+       isActive={isOpen} as={Button} rightIcon={<ChevronDownIcon />}>
+        {isOpen ? 'Login' : 'Login'}
+      </MenuButton>
+      <MenuList>
+      <Button backgroundColor={"blue"}  margin={".5rem"}><MenuItem color={"black"} onClick={() => navigate("/admin")}>Admin</MenuItem></Button> 
+      <Button backgroundColor={"green"}><MenuItem  onClick={() => navigate("/login")}>User</MenuItem></Button> 
+      </MenuList>
+    </>
+  )}
+</Menu>
+          <Button marginLeft={"-21px"}
+          onClick={() => navigate("/signup")}>
+            Register
           </Button>
         </Flex>
           <Button
