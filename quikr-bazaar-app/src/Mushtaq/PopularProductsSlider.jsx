@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Box, Flex, SimpleGrid } from '@chakra-ui/react';
+import { Box, Flex, Heading, SimpleGrid, Spacer, Text } from '@chakra-ui/react';
 
 const responsive = {
   superLargeDesktop: {
@@ -38,14 +38,15 @@ const productsAr = [
 const PopularProductsSlider = () => {
   return (
     <Box>
-      <h1>Most Popular Product</h1>
+      <Box style={{textAlign:"left",marginLeft:"9.6rem",marginTop:"1rem",color:"black",fontWeight:"bold"}}><Text >Most Popular Products</Text></Box>
+    <Box width={"80%"} margin={"auto"} mt={"3rem"} boxShadow={"rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px"}>
       <Carousel responsive={responsive}>
         {
           productsAr.map((el) => {
-            return <Flex justifyContent={"center"} alignItems={"center"}>
-              <Box key={el.id}>
+            return <Flex justifyContent={"center"} alignItems={"center"} >
+              <Box key={el.id} >
                 <img src={el.image} alt={el.title} />
-                <p>{el.title }</p>
+                <p>{el.title}</p>
               </Box>
             </Flex>
           })
@@ -53,7 +54,9 @@ const PopularProductsSlider = () => {
       </Carousel>
     
 
-    </Box>
+      </Box>
+      
+      </Box>
   );
 }
 
