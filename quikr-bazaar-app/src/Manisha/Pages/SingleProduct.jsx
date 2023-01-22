@@ -91,7 +91,7 @@ const SingleProduct = () => {
           borderRadius="8"
           bg="white"
           // height={["480"]}
-          marginBottom={['0','0',"0" ,"265"]}
+          marginBottom={['0','0',"0" ,"425"]}
           h="fit-content"
           backgroundColor="white"
         >
