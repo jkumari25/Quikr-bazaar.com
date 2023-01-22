@@ -1,6 +1,7 @@
 import { Box, Divider, Flex, Heading, ListItem, SimpleGrid,UnorderedList } from '@chakra-ui/react';
 import styles from "./Styles/BuyAndSell.module.css";
 import { BsChevronRight } from "react-icons/bs";
+import { Text } from '@chakra-ui/react';
 export const BuyAndSell = () => {
     const firstBoxStyles = {
         display: 'flex',
@@ -48,7 +49,7 @@ export const BuyAndSell = () => {
     }
   return (
       <Box className={styles.container}>
-           <Heading as={"h1"} fontWeight={"light"} mt={"1.5rem"}>Buy and Sell from 1200+ Cities Across India</Heading>
+           <Text fontSize={['16','18','32']} fontWeight="450" mt={"2rem"}>Buy and Sell from 1200+ Cities Across India</Text>
        <Flex mt="1rem" flexWrap='wrap' gap='24px' justifyContent={"center"} >
          
       <Box>
@@ -114,8 +115,3 @@ export const BuyAndSell = () => {
    </Box>
   )
 }
-
-
-
-
-

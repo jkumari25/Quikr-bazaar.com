@@ -17,11 +17,14 @@
 .image_card div{
     /* border: 2px solid blue; */
     box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+    padding: 8px;
     border-radius: 0.5rem;
 }
-.image_card div:hover{
-    cursor: pointer;
-}
+/* .image_card :hover{
+    border: 2px solid #008bcf;
+} */
+
+
 .image_card p{
     color: #0083ca;
     margin-right: 3rem;
@@ -30,15 +33,21 @@
     margin-right: 3rem;
     margin-top: 0.5rem;
     height: 30px;
-    border-color: #0083ca;
+   
 }
-.image_card button:hover{
-    background-color: #0083ca;
-    color: white;
-}
+
 .image_card img{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     width: 60%;
     display: block;
     margin: auto;
+}
+
+
+.hvr :hover{
+    border: 2px solid#008bcf;
+}
+
+.hvr > div :hover{
+    border: none
 }

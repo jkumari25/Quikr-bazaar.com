@@ -1,12 +1,13 @@
 import { Box, HStack , Image , Text ,VStack , Heading, Divider , Input} from '@chakra-ui/react'
 import React from 'react';
 import RapidGrab from "./rapid_grab.jpg";
+import { border } from '@chakra-ui/react';
 export const Footer = () => {
   return (
    <Box height={"600px"} width={"100%"} mt={{sm:"8rem",md:"8rem",lg:"8rem",xl:"8rem"}}  >
   <HStack gap={"50px"} width={"70%"} align={"start"} margin={"50px 100px"}>
-  <Image width={"10%"} src={RapidGrab}  alt={"RapidGrab"}/>
-    <Text color={"gray"} align={"start"} >RapidGrab.com is one of India’s most trusted Electronics and Appliances Platform, dispensing quality digital Products and devices at reasonable prices to over 7 million happy customers – PAN India.</Text>
+  <Image  width={"10%"}  src={RapidGrab}  alt={"RapidGrab"}/>
+    <Text color={"gray"} align={"start"} paddingTop="28px"  >RapidGrab.com is one of India’s most trusted Electronics and Appliances Platform, dispensing quality digital Products and devices at reasonable prices to over 7 million happy customers – PAN India.</Text>
    
   </HStack>
 

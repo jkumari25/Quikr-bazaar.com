@@ -27,7 +27,6 @@ import { VscAccount } from "react-icons/vsc";
 import RapidGrab from "./rapid_grab.jpg";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router";
-import styles from "./Styles/Navbar.module.css";
 
 export const Navbar = () => {
   const columns = useBreakpointValue({
@@ -45,7 +44,6 @@ export const Navbar = () => {
     top="0"
     position="sticky"
     backgroundColor="white"
-    className={styles.navbar}
     zIndex="1"
     height={['28']}
     >
