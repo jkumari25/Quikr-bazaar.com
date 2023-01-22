@@ -54,7 +54,7 @@ export const BuyAndSell = () => {
        <Flex mt="1rem" flexWrap='wrap' gap='24px' justifyContent={"center"} >
          
       <Box>
-        <Box sx={firstBoxStyles} filter='grayscale(80%)' borderRadius={"0.3rem"} height={"200px"}>Mobile & Tablet</Box>
+        <Box sx={firstBoxStyles} filter='grayscale(80%)' borderRadius={"0.3rem"} height={"200px"}>Mobile & Tablets</Box>
 
 
       <Box className={styles.category_box}>
