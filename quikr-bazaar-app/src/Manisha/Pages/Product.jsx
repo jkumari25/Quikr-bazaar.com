@@ -1,5 +1,6 @@
 import { SimpleGrid, useBreakpointValue } from "@chakra-ui/react";
 import React from "react";
+import { Navbar } from "../../Mushtaq/Navbar";
 import FilterComp from "../Componets/FilterComp";
 import ProductList from "../Componets/ProductList";
 
@@ -12,6 +13,7 @@ const Product = () => {
 
   return (
     <div>
+      <Navbar/>
       <SimpleGrid
         backgroundColor="#f3f3f3"
         // border={"2px solid brown"}

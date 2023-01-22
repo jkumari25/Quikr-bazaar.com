@@ -36,7 +36,7 @@ const ProductList = () => {
           product.map((SingleProduct) => {
             return (
               <div key={SingleProduct.id}>
-                <Link to={`product/${SingleProduct.id}`}>
+                <Link to={`/product/${SingleProduct.id}`}>
                 <ProductCard {...SingleProduct} />
                 </Link>
               </div>

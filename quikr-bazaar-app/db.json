@@ -1,0 +1,28 @@
+{
+  "cart": [
+    {
+      "id": 1,
+      "price": 16000.0,
+      "currency": "INR",
+      "name": "REALME X2 PRO",
+      "quantity": 3,
+      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230105164450-36518.png"
+    },
+    {
+      "id": 2,
+      "price": 31999,
+      "currency": "INR",
+      "name": "Iphone 11 64 GB",
+      "quantity": 3,
+      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20221228153728-87390.png"
+    },
+    {
+      "id": 3,
+      "price": 17500,
+      "currency": "INR",
+      "name": "SAMSUNG S20 FE 8/128",
+      "quantity": 3,
+      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20221227174342-12163.png"
+    }
+    ]
+}

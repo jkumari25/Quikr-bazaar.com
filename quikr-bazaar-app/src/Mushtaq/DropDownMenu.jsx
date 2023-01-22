@@ -17,7 +17,7 @@ export const DropDownMenu = () => {
             <Box>
               <br />
               <h3>Mobile Phones</h3>
-              <Link to={"#"}>Used Mobiles</Link>
+              <Link to={"/product"}>Used Mobiles</Link>
               <br /> <br />
               <p>Top Models (Used)</p>
               <br />

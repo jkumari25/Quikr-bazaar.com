@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate,Link } from "react-router-dom";
 import { getsingleProduct } from "../../Redux/ProductDetails/singleProductAction";
 import {
   border,
@@ -29,6 +29,9 @@ import {
 } from "@chakra-ui/react";
 
 import style from "../Componets/styles/ProductDetail.module.css";
+import { Navbar } from "../../Mushtaq/Navbar";
+import { Footer } from "../../Mushtaq/Footer";
+
 
 const SingleProduct = () => {
   const { id } = useParams();
@@ -62,6 +65,8 @@ const SingleProduct = () => {
   const finalRef = React.useRef(null);
 
   return (
+    <>
+    <Navbar/>
     <Box
       id="about"
       paddingY={["20", "40", "90"]}
@@ -229,7 +234,7 @@ const SingleProduct = () => {
                   </ModalContent>
                 </Modal>
 
-                <Button
+              <Link to="/CartPage">  <Button
                   paddingY={["2", "4", "6"]}
                   fontSize={["12", "16", "20"]}
                   fontWeight={["700"]}
@@ -245,13 +250,14 @@ const SingleProduct = () => {
                       duration: 2000,
                       isClosable: true,
                     });
-                    setTimeout(() => {
-                      navigate("/");
-                    }, 2000);
+                    // setTimeout(() => {
+                    //   navigate("/");
+                    // }, 2000);
                   }}
                 >
                   ADD TO CART
                 </Button>
+                </Link>
               </HStack>
 
               <Flex
@@ -303,6 +309,8 @@ const SingleProduct = () => {
         </Stack>
       </SimpleGrid>
     </Box>
+    <Footer/>
+    </>
   );
 };
 

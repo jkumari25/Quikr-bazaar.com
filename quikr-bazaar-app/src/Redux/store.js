@@ -2,9 +2,12 @@ import { legacy_createStore, applyMiddleware, compose, combineReducers } from "r
 import thunk from "redux-thunk";
 import { reducer } from "./ProductReducer/reducer";
 import { singleProductReducer } from "./ProductDetails/singleProductReducer";
+import { reducer as  cartReducer} from "./cart/reducer";
+
 
 const rootReducer = combineReducers({
     reducer,
+    cartReducer,
     singleProductManager : singleProductReducer,
 })
 
