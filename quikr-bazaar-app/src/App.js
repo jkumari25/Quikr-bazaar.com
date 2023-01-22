@@ -1,12 +1,11 @@
 import './App.css';
-import MainRoutes from './Manisha/Pages/MainRoutes';
-
+import AllRoutes from './routes/AllRoutes';
 
 
 function App() {
   return (
     <div className="App">
-      <MainRoutes />
+      <AllRoutes/>
     </div>
   );
 }

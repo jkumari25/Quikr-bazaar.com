@@ -1,13 +1,12 @@
-import React from 'react'
-
-function Homepage() {
+import { DropDownMenu } from './DropDownMenu';
+import { Navbar } from './Navbar';
+import PopularProductsSlider from './PopularProductsSlider';
+export const Homepage = () => {
   return (
-    <div>
-      <h1>Homepage</h1>
+      <div>
+        <Navbar/>
+        <DropDownMenu/>
+        <PopularProductsSlider/>
     </div>
   )
 }
-
-export default Homepage
-
-
