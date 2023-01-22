@@ -1,0 +1,17 @@
+.cellWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    /* width: 4vw;
+    height: 4vh; */
+    border-radius: 20%;
+    margin-right: 10px;
+  } 
+  
+.status{
+    padding: 5px;
+    border-radius: 5px;
+    
+}
