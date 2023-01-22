@@ -1,0 +1,28 @@
+.hvr {
+    background-image: linear-gradient(to right, #00ccd0, #0083ca);
+    color: white;
+}
+
+.hvr:hover {
+   border: 2px solid #0083ca;
+   color: #0083ca;
+   background-color: transparent;
+  
+}
+
+.hovr:hover {
+   border: 2px solid #0083ca;
+  
+  
+}
+/* .filter{
+   border: 4px solid red;
+
+} */
+
+@media(max-width:1032px){
+
+.filter{
+ visibility: hidden;
+}
+}

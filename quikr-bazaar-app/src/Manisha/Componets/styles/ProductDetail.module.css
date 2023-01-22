@@ -1,0 +1,11 @@
+.hvr {
+    background-image: linear-gradient(to right, #00ccd0, #0083ca);
+    color: white;
+}
+
+.hvr:hover {
+   border: 2px solid #0083ca;
+   color: #0083ca;
+   background-color: transparent;
+  
+}
