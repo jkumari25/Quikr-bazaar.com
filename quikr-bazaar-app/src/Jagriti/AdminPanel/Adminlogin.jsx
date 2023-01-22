@@ -21,7 +21,7 @@ import {
 } from "@chakra-ui/react";
 import { useToast } from "@chakra-ui/react";
 import {useDispatch, useSelector} from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {loginadmin} from "../../Redux/AdminRedux/action";
 
 const Form1 = () => {
@@ -406,7 +406,7 @@ function Adminlogin() {
 
 
             
-           
+           <Link to="/admin">
               <Button
                 onClick={() => onClose()}
                 ml={3}
@@ -416,7 +416,7 @@ function Adminlogin() {
               >
                 Cancel
               </Button>
-
+            </Link>
 
 
             </AlertDialogFooter>

@@ -22,40 +22,38 @@ import {
   DrawerBody,
   DrawerFooter,
   Button,
-  Grid,
-  GridItem,
-  Card,
-  CardBody,
-  Heading,
-  Image,
+  Image
+
 } from "@chakra-ui/react";
 
 import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
 
 
-import { Link } from "react-router-dom";
+
+// import { Link } from "react-router-dom";
+import UserManagement from './UserManagement';
 
 const AdminSide = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
     const [isLargerThan768] = useMediaQuery("(min-width: 485px)");
     const [ismaxThan768] = useMediaQuery("(min-width: 485px)");
-    const [sortValue, setsortValue] = useState("1");
+  
  
   return (
-    <Box>
-        <Box p={1}>
+    <Box  >
+        <Box p={1} border ="3px solid blue">
         <Flex>
           {!isLargerThan768 ? (
             <div>
               {!isLargerThan768 ? (
                 <div>
-                  <Box p={5} >
+                  <Box p={5}  border ="3px solid red">
                     <GiHamburgerMenu
                       ref={btnRef}
-                      colorScheme="black"
+                      colorScheme="teal"
                       onClick={onOpen}
+                      border ="3px solid red"
                     >
                       Open
                     </GiHamburgerMenu>
@@ -69,7 +67,7 @@ const AdminSide = () => {
                     <DrawerOverlay />
                     <DrawerContent>
                       <DrawerCloseButton />
-                      <DrawerHeader>RAPID GRAB</DrawerHeader>
+                      <DrawerHeader> FILTER & SORT</DrawerHeader>
 
                       <DrawerBody>
                         <Box
@@ -82,43 +80,53 @@ const AdminSide = () => {
                           height="100%"
                         >
                           <Text fontSize={15} as="b">
-                           RAPID GRAB
+                          Admin Panel
                           </Text>
                           <Accordion allowMultiple>
-                            <AccordionItem>
-                              <h2>
-                                <AccordionButton>
-                                  <Box as="span" flex="1" textAlign="left">
-                                    Sort By
-                                  </Box>
-                                  <AccordionIcon />
-                                </AccordionButton>
-                              </h2>
-                              <AccordionPanel pb={4}>
-                                <RadioGroup >
-                                  <Stack>
-                                      <Radio
-                                        value="desc"
-                                        name="sortBy"
-                                        
-                                      >
-                                        High Price
-                                      </Radio>
-                                      <br />
-                                      <Radio
-                                        value="asc"
-                                        name="sortBy"
-                                       
-                                      >
-                                        Low Price
-                                      </Radio>
-                               
-                                  </Stack>
-                                </RadioGroup>
-                              </AccordionPanel>
-                            </AccordionItem>
-                          </Accordion>
-                      
+                  <AccordionItem>
+                    <h2>
+                      <AccordionButton>
+                        <Box as="span" flex="1" mt={5} textAlign="left" display="flex">
+                        <Box pr={2} mt={5}><Image w="20px" h="20px" src="https://tse4.mm.bing.net/th?id=OIP.s5ks8hCxIrrGy09rFRF21wHaHa&pid=Api&P=0" />
+                        </Box> <Box pr={1} mt={5}>DeshBoard</Box>
+                        </Box>
+                        <AccordionIcon mt={5} />
+                      </AccordionButton>
+                    </h2>
+                  </AccordionItem>
+                </Accordion>
+
+
+
+                <Accordion allowMultiple>
+                  <AccordionItem>
+                    <h2>
+                      <AccordionButton>
+                        <Box as="span" flex="1" mt={5} textAlign="left" display="flex">
+                        <Box pr={2} mt={5}><Image w="20px" h="20px" src="https://tse4.mm.bing.net/th?id=OIP.s5ks8hCxIrrGy09rFRF21wHaHa&pid=Api&P=0" />
+                        </Box> <Box pr={1} mt={5}>UserManagement</Box>
+                        </Box>
+                        <AccordionIcon mt={5} />
+                      </AccordionButton>
+                    </h2>
+                  </AccordionItem>
+                </Accordion>
+
+                <Accordion allowMultiple>
+                  <AccordionItem>
+                    <h2>
+                      <AccordionButton>
+                        <Box as="span" flex="1" mt={5} textAlign="left" display="flex">
+                        <Box pr={2} mt={5}><Image w="20px" h="20px" src="https://tse4.mm.bing.net/th?id=OIP.s5ks8hCxIrrGy09rFRF21wHaHa&pid=Api&P=0" />
+                        </Box> <Box pr={1} mt={5}>
+                        OrderManagement</Box>
+                        </Box>
+                        <AccordionIcon mt={5} />
+                      </AccordionButton>
+                    </h2>
+                  </AccordionItem>
+                </Accordion>
+
                         </Box>
                       </DrawerBody>
 
@@ -134,11 +142,12 @@ const AdminSide = () => {
             </div>
           ) : null}
           {!ismaxThan768 ? null : (
-            <Box 
+            <Box
+// border="2px solid black"
+            mt={100} 
               position="fixed"
-              width={["40%", "40%", "30%", "19%"]}
+              width={["40%", "40%", "30%", "18%"]}
               h="700vh"
-              mt={100}
             >
               
               <Box
@@ -151,80 +160,60 @@ const AdminSide = () => {
                 height="100%"
               >
                 <Text fontSize={15} as="b">
-                  FILTER & SORT
+                Admin Panel
                 </Text>
+
                 <Accordion allowMultiple>
                   <AccordionItem>
                     <h2>
                       <AccordionButton>
-                        <Box as="span" flex="1" textAlign="left">
-                          Sort By
+                        <Box as="span" flex="1" mt={5} textAlign="left" display="flex">
+                        <Box pr={2} mt={5}><Image w="20px" h="20px" src="https://tse4.mm.bing.net/th?id=OIP.s5ks8hCxIrrGy09rFRF21wHaHa&pid=Api&P=0" />
+                        </Box> <Box pr={1} mt={5}>DeshBoard</Box>
                         </Box>
-                        <AccordionIcon />
+                        <AccordionIcon mt={5} />
                       </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4}>
-                      <RadioGroup onChange={setsortValue} value={sortValue}>
-                        <Stack>
-                         
-                          <div >
-                            <Radio
-                              value="desc"
-                              name="sortBy"
-                              
-                            >
-                              Ascending
-                            </Radio>
-                            <br />
-                            <Radio
-                              value="asc"
-                              name="sortBy"
-                            
-                            >
-                              Descending
-                            </Radio>
-                          </div>
-                        </Stack>
-                      </RadioGroup>
-                    </AccordionPanel>
                   </AccordionItem>
                 </Accordion>
-              
+
+
+
+                <Accordion allowMultiple>
+                  <AccordionItem>
+                    <h2>
+                      <AccordionButton>
+                        <Box as="span" flex="1" mt={5} textAlign="left" display="flex">
+                        <Box pr={2} mt={5}><Image w="20px" h="20px" src="https://tse4.mm.bing.net/th?id=OIP.s5ks8hCxIrrGy09rFRF21wHaHa&pid=Api&P=0" />
+                        </Box> <Box pr={1} mt={5}>UserManagement</Box>
+                        </Box>
+                        <AccordionIcon mt={5} />
+                      </AccordionButton>
+                    </h2>
+                  </AccordionItem>
+                </Accordion>
+
+                <Accordion allowMultiple>
+                  <AccordionItem>
+                    <h2>
+                      <AccordionButton>
+                        <Box as="span" flex="1" mt={5} textAlign="left" display="flex">
+                        <Box pr={2} mt={5}><Image w="20px" h="20px" src="https://tse4.mm.bing.net/th?id=OIP.s5ks8hCxIrrGy09rFRF21wHaHa&pid=Api&P=0" />
+                        </Box> <Box pr={1} mt={5}> OrderManagement</Box>
+                        </Box>
+                        <AccordionIcon mt={5} />
+                      </AccordionButton>
+                    </h2>
+                  </AccordionItem>
+                </Accordion>
+
+
+
               </Box>
             </Box>
           )}
 
-          {/* <Box ml={[0, 300, 300, 350]} width={["60%", "60%", "70%", "77%"]}>
-            <Grid
-              ml="50px"
-              mt="10"
-              gap={5}
-              templateColumns={[
-                "repeat(1, 1fr)",
-                "repeat(1, 1fr)",
-                "repeat(2, 1fr)",
-                "repeat(3, 1fr)",
-              ]}
-            >
-             
-                  <GridItem>
-                    <Link >
-                      <Card maxW="sm">
-                        <CardBody>
-                          <Image
-                          />
-                          <Stack mt="6" spacing="3">
-                            <Heading size="md"></Heading>
-                            <Text color="gray"></Text>
-                          </Stack>
-                        </CardBody>
-                      </Card>
-                    </Link>
-                  </GridItem>
-           
-            </Grid>
-           
-          </Box> */}
+        
         </Flex>
       </Box>
     </Box>

@@ -28,6 +28,7 @@ import RapidGrab from "./rapid_grab.jpg";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router";
 import Adminlogin from "../Jagriti/AdminPanel/Adminlogin";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const columns = useBreakpointValue({
@@ -54,10 +55,12 @@ export const Navbar = () => {
         alignItems={"center"}
       >
 
-
+      
         <HStack>
           <SlMenu size={22} />
+          <Link to="/" >
           <Img width={["20", "30", "30"]} src={RapidGrab} alt="RapidGrab" />
+          </Link>
         </HStack>
         
         <HStack spacing={4} ml={"8rem"} mt={[20, 20, 0, 0, 0, 0]}>
@@ -89,22 +92,22 @@ export const Navbar = () => {
             <Menu>
   {({ isOpen }) => (
     <>
-      <MenuButton 
+      {/* <MenuButton 
        isActive={isOpen} as={Button} rightIcon={<ChevronDownIcon />}>
-        {isOpen ? 'User' : 'User'}
+        {isOpen ? 'Register' : 'Register'}
 
        
-      </MenuButton>
+      </MenuButton> */}
+      <Button backgroundColor={"green"}><MenuItem  onClick={() => navigate("/signup")}>User</MenuItem></Button> 
       {/* <MenuList>
       <Button backgroundColor={"blue"}  margin={".5rem"}><MenuItem color={"black"} onClick={() => navigate("/adminlogin")}>Admin</MenuItem></Button> 
-      <Button backgroundColor={"green"}><MenuItem  onClick={() => navigate("/login")}>User</MenuItem></Button> 
+     
       </MenuList> */}
     </>
   )}
   </Menu>
-          <Button marginLeft={"-21px"}
-          onClick={() => navigate("/adminlogin")}>
-            <Adminlogin />
+          <Button marginLeft={"-21px"}>
+            <Adminlogin  />
           </Button>
        
           <Button
