@@ -27,6 +27,7 @@ import { VscAccount } from "react-icons/vsc";
 import RapidGrab from "./rapid_grab.jpg";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router";
+import Adminlogin from "../Jagriti/AdminPanel/Adminlogin";
 
 export const Navbar = () => {
   const columns = useBreakpointValue({
@@ -90,18 +91,20 @@ export const Navbar = () => {
     <>
       <MenuButton 
        isActive={isOpen} as={Button} rightIcon={<ChevronDownIcon />}>
-        {isOpen ? 'Login' : 'Login'}
+        {isOpen ? 'User' : 'User'}
+
+       
       </MenuButton>
-      <MenuList>
-      <Button backgroundColor={"blue"}  margin={".5rem"}><MenuItem color={"black"} onClick={() => navigate("/admin")}>Admin</MenuItem></Button> 
+      {/* <MenuList>
+      <Button backgroundColor={"blue"}  margin={".5rem"}><MenuItem color={"black"} onClick={() => navigate("/adminlogin")}>Admin</MenuItem></Button> 
       <Button backgroundColor={"green"}><MenuItem  onClick={() => navigate("/login")}>User</MenuItem></Button> 
-      </MenuList>
+      </MenuList> */}
     </>
   )}
-</Menu>
+  </Menu>
           <Button marginLeft={"-21px"}
-          onClick={() => navigate("/signup")}>
-            Register
+          onClick={() => navigate("/adminlogin")}>
+            <Adminlogin />
           </Button>
        
           <Button
