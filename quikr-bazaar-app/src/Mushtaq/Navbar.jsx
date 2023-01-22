@@ -27,6 +27,7 @@ import { VscAccount } from "react-icons/vsc";
 import RapidGrab from "./rapid_grab.jpg";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router";
+import styles from "./Styles/Navbar.module.css";
 
 export const Navbar = () => {
   const columns = useBreakpointValue({
@@ -37,10 +38,16 @@ export const Navbar = () => {
 
   const navigate=useNavigate();
   return (
-    <Box
-      style={{ fontFamily: "ProximaNova-bold,Arial,Helvetica,sans-serif" }}
-      padding={"12px"}
-      borderBottom={"2px solid lightgrey"}
+    <Flex
+    justifyContent={"center"}
+    style={{ fontFamily: "ProximaNova-bold,Arial,Helvetica,sans-serif" }}
+    borderBottom={"2px solid lightgrey"}
+    top="0"
+    position="sticky"
+    backgroundColor="white"
+    className={styles.navbar}
+    zIndex="1"
+    height={['28']}
     >
       <SimpleGrid
         gridTemplateColumns={columns}
@@ -98,13 +105,17 @@ export const Navbar = () => {
           onClick={() => navigate("/signup")}>
             Register
           </Button>
-        </Flex>
+       
           <Button
+            
+            
+            
             bg={"#fcec52"}
-          >Post Free Add</Button>
+            >Post Free Add</Button>
+             </Flex>
         </HStack>
       </SimpleGrid>
      
-    </Box>
+    </Flex>
   );
 };
