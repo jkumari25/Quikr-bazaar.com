@@ -49,11 +49,12 @@ export const BuyAndSell = () => {
     }
   return (
       <Box className={styles.container}>
-           <Text fontSize={['16','18','32']} fontWeight="450" mt={"2rem"}>Buy and Sell from 1200+ Cities Across India</Text>
+      <Text fontSize={['16', '18', '32']} fontWeight="450" mt={"2rem"}>Buy and Sell from 1200+ Cities Across India</Text>
+      
        <Flex mt="1rem" flexWrap='wrap' gap='24px' justifyContent={"center"} >
          
       <Box>
-        <Box sx={firstBoxStyles} filter='grayscale(80%)' borderRadius={"0.3rem"} height={"200px"}>Mobile & Tablets</Box>
+        <Box sx={firstBoxStyles} filter='grayscale(80%)' borderRadius={"0.3rem"} height={"200px"}>Mobile & Tablet</Box>
 
 
       <Box className={styles.category_box}>
