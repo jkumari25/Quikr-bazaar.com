@@ -5,8 +5,16 @@
       "price": 16000,
       "currency": "INR",
       "name": "REALME X2 PRO",
-      "quantity": 3,
+      "quantity": 2,
       "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230105164450-36518.png"
+    },
+    {
+      "id": 2,
+      "price": 31999,
+      "currency": "INR",
+      "name": "IPHONE 11 64 GB",
+      "quantity": 1,
+      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20221228153728-87390.png"
     }
   ]
 }

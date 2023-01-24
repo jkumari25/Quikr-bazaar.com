@@ -119,6 +119,7 @@ const productsAr = [
 export const ElectronicsAndAppliancesSlider = () => {
   return (
     <Box
+    // border={"2px solid red"}
       className={styles["list-products"]}
       style={{ width: "80%", margin: "auto" }}
     >

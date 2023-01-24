@@ -27,11 +27,8 @@ import {
 } from "@chakra-ui/react";
 
 import { GiHamburgerMenu } from "react-icons/gi";
-
-
-
-// import { Link } from "react-router-dom";
 import UserManagement from './UserManagement';
+import { Link } from "react-router-dom";
 
 const AdminSide = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -162,19 +159,20 @@ const AdminSide = () => {
                 <Text fontSize={15} as="b">
                 Admin Panel
                 </Text>
-
                 <Accordion allowMultiple>
+                <Link to="/admin">
                   <AccordionItem>
                     <h2>
                       <AccordionButton>
                         <Box as="span" flex="1" mt={5} textAlign="left" display="flex">
                         <Box pr={2} mt={5}><Image w="20px" h="20px" src="https://tse4.mm.bing.net/th?id=OIP.s5ks8hCxIrrGy09rFRF21wHaHa&pid=Api&P=0" />
-                        </Box> <Box pr={1} mt={5}>DeshBoard</Box>
+                        </Box> <Box pr={1} mt={5}>DashBoard</Box>
                         </Box>
                         <AccordionIcon mt={5} />
                       </AccordionButton>
                     </h2>
                   </AccordionItem>
+                  </Link>
                 </Accordion>
 
 

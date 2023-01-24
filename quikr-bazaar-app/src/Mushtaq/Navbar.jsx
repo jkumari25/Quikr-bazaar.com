@@ -29,6 +29,8 @@ import { ChevronDownIcon } from "@chakra-ui/icons";
 import { useNavigate } from "react-router";
 import Adminlogin from "../Jagriti/AdminPanel/Adminlogin";
 import { Link } from "react-router-dom";
+import style from "../Manisha/Componets/styles/ProductCard.module.css"
+
 
 export const Navbar = () => {
   const columns = useBreakpointValue({
@@ -40,6 +42,7 @@ export const Navbar = () => {
   const navigate=useNavigate();
   return (
     <Flex
+    className={style.filter}
     justifyContent={"center"}
     style={{ fontFamily: "ProximaNova-bold,Arial,Helvetica,sans-serif" }}
     borderBottom={"2px solid lightgrey"}
