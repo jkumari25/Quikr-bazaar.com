@@ -29,8 +29,8 @@ import { useToast } from "@chakra-ui/react";
         checkdata(res.data,adminemail)
         if(details==null){
           toast({
-            title: `Email does not exist`,
-            status: 'error',
+            title: `Login Successful`,
+            status: 'success',
             isClosable: true,
           })
           dispatch(loginFailure())

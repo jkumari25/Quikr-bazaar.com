@@ -5,6 +5,7 @@ import AdminNavbar from './AdminPanel/AdminNavbar';
 import AdminProduct from './AdminPanel/AdminProduct';
 // import Delivery from './AdminPanel/Delivery';
 import Delete from './AdminPanel/Delete';
+import UserManagement from './AdminPanel/UserManagement';
 import {
   Box,
   
@@ -23,6 +24,7 @@ const Admin = () => {
         <Box>
         {showPage == "AdminProduct" ? <AdminProduct /> : null}
         {/* {showPage == "Delivery" ? <Delivery /> : null} */}
+        {showPage == "UserManagement" ? <UserManagement /> : null}
         {showPage == "Delete" ? <Delete/> : null}
         </Box>
        </Box>

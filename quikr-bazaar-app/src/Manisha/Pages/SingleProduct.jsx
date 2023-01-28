@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams, useNavigate,Link } from "react-router-dom";
 import { getsingleProduct } from "../../Redux/ProductDetails/singleProductAction";
+import axios from "axios";
 import {
   border,
   Box,
@@ -42,9 +43,9 @@ const SingleProduct = () => {
   useEffect(() => {
     dispatch(getsingleProduct({ id }));
   }, [id]);
-  console.log(product);
+  // console.log(product);
   let details = product?.Details || [];
-
+  // console.log(details);
   let hoverimg = (e) => {
     let fullImg = document.getElementById("image-box");
     fullImg.src = e.target.src;
@@ -60,6 +61,43 @@ const SingleProduct = () => {
   // Modal
 
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const postData=()=>{
+    let arr=product.price.split(",");
+    let price="";
+    for(let i in arr){
+      price+=arr[i]
+    }
+    let obj= {
+      id: product.id,
+      price: +price,
+      currency: "INR",
+      name: product.title,
+      quantity: 1,
+      imageUrl: product.image
+    }
+    console.log(obj)
+    axios.post(`http://localhost:8080/cart`,obj).then(()=>{
+      toast({
+        position: "top",
+        title: "Add To Cart.",
+
+        status: "success",
+        duration: 2000,
+        isClosable: true,
+      });
+    }).catch(()=>{ toast({
+      position: "top",
+      title: "Item already in cart",
+
+      status: "error",
+      duration: 2000,
+      isClosable: true,
+    });
+  })
+  }
+
+
 
   const initialRef = React.useRef(null);
   const finalRef = React.useRef(null);
@@ -242,14 +280,8 @@ const SingleProduct = () => {
                   className={style.hvr}
                   bg=""
                   onClick={() => {
-                    toast({
-                      position: "top",
-                      title: "Add To Cart.",
-
-                      status: "success",
-                      duration: 2000,
-                      isClosable: true,
-                    });
+                    
+                    postData();
                     // setTimeout(() => {
                     //   navigate("/");
                     // }, 2000);

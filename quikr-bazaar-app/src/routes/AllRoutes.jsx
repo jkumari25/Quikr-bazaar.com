@@ -9,6 +9,7 @@ import SingleProduct from "../Manisha/Pages/SingleProduct";
 import { CartPage } from "../Akash/Cart/CartPage";
 import Success from "../Akash/Success";
 import Adminlogin from "../Jagriti/AdminPanel/Adminlogin";
+import Payment from "../Akash/payment";
 
 
 const AllRoutes = () => {
@@ -22,6 +23,7 @@ const AllRoutes = () => {
       <Route path="/product/:id" element={<SingleProduct />} />
       <Route path="/CartPage" element={<CartPage/>} />
       <Route path="/success" element={<Success/>} />
+      <Route path="/payment" element={<Payment />} />
       <Route path="/adminlogin" element={<Adminlogin/>} />
 
       <Route path="*" element={<h3>Page Not Found</h3>} />

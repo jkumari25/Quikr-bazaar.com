@@ -233,7 +233,7 @@ const Form1 = () => {
 
 
 const Form2 = () => {
-   // const navigate = useNavigate();
+  const navigate = useNavigate();
   const toast = useToast();
   const [adminemail, setAdminEmail] = React.useState("");
   const [adminpassword, setadminpassword] = React.useState("");
@@ -250,7 +250,7 @@ const Form2 = () => {
     console.log('Submit')
     let userAdmin=adminemail
     dispatch(loginadmin(userAdmin,adminpassword,toast, setadminpassword ,setAdminEmail ));
-    // navigate("/admindeshboard")
+    navigate("/admin")
   }
   
 
