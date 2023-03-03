@@ -13,10 +13,11 @@ import { getCartItem } from "../../Redux/cart/action";
 import { CartItem } from "./CartItem";
 import { CartOrderSummary } from "./CartOrderSummary";
 import { useEffect } from "react";
-import { Navbar } from "../../Mushtaq/Navbar";
+
 import { Footer } from "../../Mushtaq/Footer";
 
 // import { cartData } from './_data'
+import WithSubnavigation from './../../Mushtaq/WithSubNavigation';
 
 export const CartPage = () => {
   const { cart } = useSelector((state) => state.cartReducer);
@@ -29,7 +30,7 @@ export const CartPage = () => {
   return (
     <>
       <Box pt="30px">
-        <Navbar />
+       <WithSubnavigation/>
       </Box>
       <Box
         margin="120px"

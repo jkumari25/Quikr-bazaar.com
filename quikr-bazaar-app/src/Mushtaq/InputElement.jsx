@@ -4,7 +4,12 @@ import React from "react";
 
 const InputElement = () => {
   return (
-    <Box width="80%" margin={"auto"} mt="2rem" className={styles["input-container"]}>
+    <Box
+      width="80%"
+      margin={"auto"}
+      mt="4rem"
+      className={styles["input-container"]}
+    >
       <Text textAlign={"left"}>I Want To Receive Alerts</Text>
       <SimpleGrid columns={[4]}>
         <Box>
@@ -20,7 +25,15 @@ const InputElement = () => {
           <Input variant="flushed" placeholder="Mobile" />
         </Box>
         <Box>
-          <Button mr={"5rem"} mt={"1rem"} width={"220px"} borderRadius={"2px"} colorScheme="blue">CREATE ALERT</Button>
+          <Button
+            mr={"5rem"}
+            mt={"1rem"}
+            width={"220px"}
+            borderRadius={"2px"}
+            colorScheme="blue"
+          >
+            CREATE ALERT
+          </Button>
         </Box>
       </SimpleGrid>
     </Box>
