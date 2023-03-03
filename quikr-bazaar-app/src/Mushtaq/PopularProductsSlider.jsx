@@ -100,6 +100,8 @@ const PopularProductsSlider = () => {
         <Text>Most Popular Products</Text>
       </Box>
       <Box
+        position={"relative"}
+        zIndex="1"
         width={"80%"}
         margin={"auto"}
         mt={"3rem"}

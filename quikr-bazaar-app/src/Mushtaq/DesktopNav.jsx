@@ -15,7 +15,6 @@ import {
   InputGroup,
   InputLeftAddon,
   InputRightElement,
-  Link,
   Menu,
   MenuItem,
   Popover,
@@ -33,6 +32,7 @@ import { CiLocationOn, CiSearch } from "react-icons/ci";
 import { FiChevronDown } from "react-icons/fi";
 import { VscAccount } from "react-icons/vsc";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 import { MobileNav } from "./MobileNav";
 import React, { useState } from "react";
 import { Form1, Form2 } from "../Jagriti/AdminPanel/Adminlogin";
@@ -53,7 +53,9 @@ export const DesktopNav = () => {
 
   return (
     <Stack direction={"row"} spacing={4}>
-      <Image width={["20", "30", "30"]} src={RapidGrab} alt="RapidGrab" />
+      <Link to="/">
+        <Image width={["20", "30", "30"]} src={RapidGrab} alt="RapidGrab" />
+      </Link>
       <HStack spacing={4} ml={"8rem"} mt={[20, 20, 0, 0, 0, 0]}>
         <CiLocationOn />
         <p>All India</p>

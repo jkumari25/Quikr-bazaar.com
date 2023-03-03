@@ -43,10 +43,13 @@
   margin: auto;
 }
 
-
-.hvr :hover{
-  border: 2px solid#008bcf;
+.hvr img{
+  /* border: 2px solid red; */
+  margin-top: 6rem;
 }
+/* .hvr :hover{
+  border: 2px solid#008bcf;
+} */
 
 .hvr > div :hover{
   border: none
