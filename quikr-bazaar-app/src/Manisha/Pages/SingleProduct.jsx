@@ -30,8 +30,8 @@ import {
 } from "@chakra-ui/react";
 
 import style from "../Componets/styles/ProductDetail.module.css";
-import { Navbar } from "../../Mushtaq/Navbar";
 import { Footer } from "../../Mushtaq/Footer";
+import WithSubnavigation from "../../Mushtaq/WithSubNavigation";
 
 
 const SingleProduct = () => {
@@ -104,7 +104,7 @@ const SingleProduct = () => {
 
   return (
     <>
-    <Navbar/>
+    <WithSubnavigation/>
     <Box
       id="about"
       paddingY={["20", "40", "90"]}

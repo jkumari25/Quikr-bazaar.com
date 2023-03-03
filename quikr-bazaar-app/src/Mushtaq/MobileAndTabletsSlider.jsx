@@ -117,7 +117,7 @@ const productsAr = [
 export const MobileAndTabletsSlider = () => {
   return (
     <Box
-      // className={styles["list-products"]}
+      className={styles["list-products"]}
       style={{ width: "80%", margin: "auto" }}
     >
       <Box>

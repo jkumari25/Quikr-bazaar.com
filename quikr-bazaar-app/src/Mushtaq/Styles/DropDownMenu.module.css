@@ -1,15 +1,16 @@
 .container{
   display: flex;
-  width: 85%;
+  width: 90%;
   margin: auto;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  margin-top: 100px;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
 }
-@media (min-width: 1008px) {
+/* @media (min-width: 1008px) {
   .container {
     display: none;
   }
-}
+} */
 
 .mobile-drop,.furniture-drop,.electronics-drop,.home-drop,.kids-drop,.sports-drop{
     margin-left: 3rem;
@@ -19,9 +20,9 @@
 .mobile-drop-content{
   position: absolute;
   width: 80%;
-  top: 152px;
+  top: 145;
   left: 0;
-  z-index: 91;
+  z-index: 1000;
   background: #fff;
   padding: 20px 15px;
   border: 1px solid rgba(0,0,0,.15);
@@ -33,7 +34,7 @@
 .furniture-drop-content{
     position: absolute;
     width: 80%;
-    top: 152px;
+    top: 145;
     left: 0;
     z-index: 91;
     background: #fff;
@@ -48,7 +49,7 @@
 .electronics-drop-content{
     position: absolute;
     width: 80%;
-    top: 152px;
+    top: 145;
     left: 0;
     z-index: 91;
     background: #fff;
@@ -62,7 +63,7 @@
 .home-drop-content{
     position: absolute;
     width: 80%;
-    top: 152px;
+    top: 145;
     left: 0;
     z-index: 91;
     background: #fff;
@@ -76,7 +77,7 @@
 .kids-drop-content{
   position: absolute;
     width: 80%;
-    top: 152px;
+    top: 145;
     left: 0;
     z-index: 91;
     background: #fff;
@@ -90,7 +91,7 @@
 .sports-drop-content{
     position: absolute;
     width: 80%;
-    top: 152px;
+    top: 145;
     left: 0;
     z-index: 91;
     background: #fff;

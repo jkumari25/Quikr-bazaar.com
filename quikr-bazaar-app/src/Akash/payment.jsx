@@ -28,8 +28,8 @@ import { useRef } from "react";
 
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 import { Navigate, useNavigate } from "react-router-dom";
-import {Navbar} from "../Mushtaq/Navbar";
 import { Footer } from "../Mushtaq/Footer";
+import WithSubnavigation from "../Mushtaq/WithSubNavigation";
 
 
 const Payment = () => {
@@ -79,7 +79,7 @@ const Payment = () => {
   };
   return (
     <div>
-      <Navbar />
+      <WithSubnavigation/>
       <Box
         display={{ lg: "flex", md: "flex", sm: "grid" }}
         gap="20px"
