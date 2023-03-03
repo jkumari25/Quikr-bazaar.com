@@ -6,11 +6,6 @@
   margin-top: 100px;
   /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
 }
-/* @media (min-width: 1008px) {
-  .container {
-    display: none;
-  }
-} */
 
 .mobile-drop,.furniture-drop,.electronics-drop,.home-drop,.kids-drop,.sports-drop{
     margin-left: 3rem;

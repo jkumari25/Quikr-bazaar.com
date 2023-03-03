@@ -139,6 +139,7 @@ export const ElectronicsAndAppliancesSlider = () => {
           </Box>
         </Flex>
 
+        <Box position={"relative"} zIndex="1">
         <Carousel responsive={responsive}>
           {productsAr.map((el) => {
             return (
@@ -185,6 +186,7 @@ export const ElectronicsAndAppliancesSlider = () => {
             );
           })}
         </Carousel>
+        </Box>
       </Box>
     </Box>
   );

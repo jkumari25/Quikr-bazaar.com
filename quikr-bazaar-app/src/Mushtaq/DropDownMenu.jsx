@@ -5,7 +5,7 @@ import { FiChevronDown } from "react-icons/fi";
 
 export const DropDownMenu = () => {
   return (
-    <Flex className={styles.container}>
+    <Flex className={styles.container} display={["none","none","none","none","flex"]}>
       <Box className={styles["mobile-drop"]}>
         <Button className={styles["mobile-drop-btn"]} bg="none">
           <Link to={"#"}>MOBILES</Link>

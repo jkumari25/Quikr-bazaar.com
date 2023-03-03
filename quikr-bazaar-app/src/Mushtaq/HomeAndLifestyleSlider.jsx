@@ -137,6 +137,7 @@ export const HomeAndLifestyleSlider = () => {
           </Box>
         </Flex>
 
+        <Box position={"relative"} zIndex="1">
         <Carousel responsive={responsive}>
           {productsAr.map((el) => {
             return (
@@ -177,6 +178,7 @@ export const HomeAndLifestyleSlider = () => {
             );
           })}
         </Carousel>
+        </Box>
       </Box>
     </Box>
   );

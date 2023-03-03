@@ -9,7 +9,7 @@ import {
   SimpleGrid,
   Spacer,
   Text,
-  Img,
+  Image,
 } from "@chakra-ui/react";
 import styles from "./Styles/MobileAndTablets.module.css";
 import { BiRupee } from "react-icons/bi";
@@ -141,6 +141,7 @@ export const MobileAndTabletsSlider = () => {
           </Box>
         </Flex>
 
+        <Box position={"relative"} zIndex="1">
         <Carousel responsive={responsive}>
           {productsAr.map((el) => {
             return (
@@ -155,7 +156,7 @@ export const MobileAndTabletsSlider = () => {
                   textAlign={"start"}
                   key={el.id}
                 >
-                  <Img
+                  <Image
                     borderRadius="8"
                     className={styles.pic}
                     width={["150", "180", "220px"]}
@@ -169,7 +170,11 @@ export const MobileAndTabletsSlider = () => {
                     <Spacer />
                     <Box>{el.city}</Box>
                   </Flex>
-                  <Button colorScheme="teal" variant="outline">
+                  <Button
+                    colorScheme="teal"
+                    variant="outline"
+                    className={styles.view}
+                  >
                     View
                   </Button>
                 </Box>
@@ -177,6 +182,7 @@ export const MobileAndTabletsSlider = () => {
             );
           })}
         </Carousel>
+        </Box>
       </Box>
     </Box>
   );
