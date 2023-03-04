@@ -9,7 +9,7 @@ export const getCartItem = (payload) => (dispatch) => {
   axios
     .get("http://localhost:8080/cart")
     .then((res) => {
-        // console.log(res.data)
+        console.log(res.data)
       dispatch({
         type: types.GET_CART_ITEM_SUCCESS,
         payload: res.data,

@@ -1,55 +1,42 @@
 import { Box, SimpleGrid, Text } from "@chakra-ui/react";
-import styles from "./Styles/BrowseByCategory.module.css";
 import { TfiMobile } from "react-icons/tfi";
-import { GrVend } from "react-icons/gr";
-import { GrSystem } from "react-icons/gr";
-import { MdSportsCricket } from "react-icons/md";
+import { GrVend,GrSystem } from "react-icons/gr";
+import { MdSportsCricket, MdToys } from "react-icons/md";
 import { AiOutlineHome } from "react-icons/ai";
-import { MdToys } from "react-icons/md";
+
 export const BrowseByCategory = () => {
   return (
-    <Box>
-      <Text
-        textAlign={"left"}
-        ml={[12, 20, 28, 40, 40, 40]}
-        fontSize={"20px"}
-        mt="1rem"
-      >
+    <>
+      <Text fontSize={"20px"} mt="1rem" textAlign={"left"} ml={[20,20,30,35,40]}>
         Browse by Category
       </Text>
-      <Box
-        width="80%"
-        margin={"auto"}
-        height="100px"
-        className={styles.container}
-      >
-        <SimpleGrid columns={[6]} mt="1rem">
-          <Box className={styles.category_box}>
-            <TfiMobile size={35} style={{ marginLeft: "2rem" }} />
-            <Text>Mobile & Tablets</Text>
-          </Box>
-          <Box className={styles.category_box}>
-            <GrVend size={35} style={{ marginLeft: "2rem" }} />
-            <Text>Furniture & Decor</Text>
-          </Box>
-          <Box className={styles.category_box}>
-            <GrSystem size={35} style={{ marginLeft: "2rem" }} />
-            <Text>Electronics & Appliances</Text>
-          </Box>
-          <Box className={styles.category_box}>
-            <MdSportsCricket size={35} style={{ marginLeft: "2rem" }} />
-            <Text>Sports, Hobbies & Fashion</Text>
-          </Box>
-          <Box className={styles.category_box}>
-            <AiOutlineHome size={35} style={{ marginLeft: "2rem" }} />
-            <Text>Home & LifeStyle</Text>
-          </Box>
-          <Box className={styles.category_box}>
-            <MdToys size={35} style={{ marginLeft: "2rem" }} />
-            <Text>Kids & Toys</Text>
-          </Box>
-        </SimpleGrid>
-      </Box>
-    </Box>
+
+      <SimpleGrid columns={[2, 2, 3, 4, 6]} width="80%" m={"auto"} mt={"1rem"} padding="20px" boxShadow= "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px" >
+        <Box padding={"5px"} _hover={{backgroundColor:"#0083ca",color:"white",cursor:"pointer"}}>
+          <TfiMobile size={35} style={{ margin: "auto" }} />
+          <Text>Mobile & Tablets</Text>
+        </Box>
+        <Box padding={"5px"} _hover={{backgroundColor:"#0083ca",color:"white",cursor:"pointer"}}>
+          <GrVend size={35} style={{ margin: "auto" }} />
+          <Text>Furniture & Decor</Text>
+        </Box>
+        <Box padding={"5px"} _hover={{backgroundColor:"#0083ca",color:"white",cursor:"pointer"}}>
+          <GrSystem size={35} style={{ margin: "auto" }} />
+          <Text>Electronics </Text>
+        </Box>
+        <Box padding={"5px"} _hover={{backgroundColor:"#0083ca",color:"white",cursor:"pointer"}}>
+          <MdSportsCricket size={35} style={{ margin: "auto" }} />
+          <Text>Sports & Hobbies</Text>
+        </Box>
+        <Box padding={"5px"} _hover={{backgroundColor:"#0083ca",color:"white",cursor:"pointer"}}>
+          <AiOutlineHome size={35} style={{ margin: "auto" }} />
+          <Text>Home & LifeStyle</Text>
+        </Box>
+        <Box padding={"5px"} _hover={{backgroundColor:"#0083ca",color:"white",cursor:"pointer"}}>
+          <MdToys size={35} style={{ margin: "auto" }} />
+          <Text>Kids & Toys</Text>
+        </Box>
+      </SimpleGrid>
+    </>
   );
 };
