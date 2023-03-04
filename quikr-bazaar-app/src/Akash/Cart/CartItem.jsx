@@ -85,9 +85,11 @@ export const CartItem = (props) => {
           aria-label={`Delete ${name} from cart`}
           onClick={() => {
             dispatch(deleteCartItem(id)).then((res) => {
-              if (res.type === "DELETE_ITEM_SUCCESS") {
-                dispatch(getCartItem());
-              }
+              // if (res.type === "DELETE_ITEM_SUCCESS") {
+              //   dispatch(getCartItem());
+              //   console.log("a")
+              // }
+              console.log(res);
             });
           }}
         />

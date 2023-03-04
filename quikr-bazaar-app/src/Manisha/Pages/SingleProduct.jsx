@@ -77,7 +77,7 @@ const SingleProduct = () => {
       imageUrl: product.image
     }
     console.log(obj)
-    axios.post(`http://localhost:8080/cart`,obj).then(()=>{
+    axios.post(`https://fake-json-server-flax.vercel.app/cart`,obj).then(()=>{
       toast({
         position: "top",
         title: "Add To Cart.",

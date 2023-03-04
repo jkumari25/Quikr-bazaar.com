@@ -1,28 +1,36 @@
 {
   "cart": [
     {
-      "id": 5,
-      "price": 41000,
-      "currency": "INR",
-      "name": "IPHONE 12",
-      "quantity": 1,
-      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230108080113-3375.png"
-    },
-    {
-      "id": 23,
-      "price": 25000,
-      "currency": "INR",
-      "name": "Mi 11x 8/128",
-      "quantity": 1,
-      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230113181758-97380.jpeg"
-    },
-    {
       "id": 1,
       "price": 16000,
       "currency": "INR",
       "name": "REALME X2 PRO",
       "quantity": 1,
       "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230105164450-36518.png"
+    },
+    {
+      "id": 38,
+      "price": 41900,
+      "currency": "INR",
+      "name": "Google Pixel 6Pro - 12/256GB",
+      "quantity": 1,
+      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230111182822-88837.png"
+    },
+    {
+      "id": 15,
+      "price": 37999,
+      "currency": "INR",
+      "name": "iPhone 12 64gb",
+      "quantity": 1,
+      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230114181821-19976.png"
+    },
+    {
+      "id": 3,
+      "price": 17500,
+      "currency": "INR",
+      "name": "SAMSUNG S20 FE 8/128",
+      "quantity": 1,
+      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20221227174342-12163.png"
     }
   ]
 }

@@ -7,7 +7,7 @@ export const getCartItem = (payload) => (dispatch) => {
   });
 
   axios
-    .get("http://localhost:8080/cart")
+    .get("https://fake-json-server-flax.vercel.app/cart")
     .then((res) => {
         // console.log(res.data)
       dispatch({
@@ -16,6 +16,7 @@ export const getCartItem = (payload) => (dispatch) => {
       });
     })
     .catch(() => {
+      getCartItem();
       dispatch({
         type: types.GET_CART_ITEM_FAILURE,
       });
@@ -29,7 +30,7 @@ export const addCartItem = (payload) => (dispatch) => {
   });
 
   axios
-    .post("http://localhost:8080/cart", payload)
+    .post("https://fake-json-server-flax.vercel.app/cart", payload)
     .then((res) => {
       dispatch({
         type: types.ADD_TO_CART_SUCCESS,
@@ -49,7 +50,7 @@ export const updateCartItem = (payload) => (dispatch) => {
   });
 
   axios
-    .get("http://localhost:8080/cart")
+    .get("https://fake-json-server-flax.vercel.app/cart")
     .then((res) => {
       dispatch({
         type: types.QUANTITY_UPDATE_SUCCESS,
@@ -70,14 +71,13 @@ export const deleteCartItem = (payload) => (dispatch) => {
   });
 
   return axios
-    .delete(`http://localhost:8080/cart/${payload}`)
-    .then((res) => {
-     return dispatch({
-        type: types.DELETE_ITEM_SUCCESS,
-        // payload: res.data,
-      });
-      // getCartItem();
+    .delete(`https://fake-json-server-flax.vercel.app/cart/${payload}`)
+    .then((res) => dispatch({
+      type: types.DELETE_ITEM_SUCCESS,
+      // payload: res.data,
     })
+      // getCartItem();
+    )
     .catch(() => {
       dispatch({
         type: types.DELETE_ITEM_FAILURE,
