@@ -7,7 +7,7 @@ export const DropDownMenu = () => {
   return (
     <Flex className={styles.container} display={["none","none","none","none","flex"]}>
       <Box className={styles["mobile-drop"]}>
-        <Button className={styles["mobile-drop-btn"]} bg="none">
+        <Button className={styles["mobile-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
           <Link to={"#"}>MOBILES</Link>
           <FiChevronDown />
         </Button>
@@ -97,7 +97,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["furniture-drop"]}>
-        <Button bg={"none"} className={styles["furniture-drop-btn"]}>
+        <Button className={styles["furniture-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
           <Link to={"#"}>FURNITURE & DECOR</Link>
           <FiChevronDown />
         </Button>
@@ -187,7 +187,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["electronics-drop"]}>
-        <Button bg={"none"} className={styles["electronics-drop-btn"]}>
+        <Button className={styles["electronics-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
           <Link to={"#"}>ELECTRONICS </Link>
           <FiChevronDown />
         </Button>
@@ -277,7 +277,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["home-drop"]}>
-        <Button bg={"none"} className={styles["home-drop-btn"]}>
+        <Button className={styles["home-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
           <Link to={"#"}>HOME APPLIANCES </Link>
           <FiChevronDown />
         </Button>
@@ -367,7 +367,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["kids-drop"]}>
-        <Button bg={"none"} className={styles["kids-drop-btn"]}>
+        <Button className={styles["kids-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
           <Link to={"#"}>KIDS & TOYS </Link>
           <FiChevronDown />
         </Button>
@@ -457,7 +457,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["sports-drop"]}>
-        <Button bg={"none"} className={styles["sports-drop-btn"]}>
+        <Button className={styles["sports-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
           <Link to={"#"}>SPORTS, HOBBIES & FASHION</Link>
           <FiChevronDown />
         </Button>
@@ -547,7 +547,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["sports-drop"]}>
-        <Button bg={"none"} className={styles["sports-drop-btn"]}>
+        <Button className={styles["sports-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
           <Link to={"#"}>LAPTOP ACCESSORIES </Link>
           <FiChevronDown />
         </Button>

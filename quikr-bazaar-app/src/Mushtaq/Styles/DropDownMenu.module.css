@@ -103,11 +103,10 @@
   
 
 .mobile-drop-btn a, .furniture-drop-btn a, .electronics-drop-btn a, .home-drop-btn a, .kids-drop-btn a, .sports-drop-btn a {
-  color: grey;
   font-weight: lighter;
   font-size: 12px;
   font-family: ProximaNova-bold,Arial,Helvetica,sans-serif;
 }
-.mobile-drop a:hover,.furniture-drop a:hover,.electronics-drop a:hover,.home-drop a:hover,.kids-drop a:hover,.sports-drop a:hover {
+.mobile-drop-content a:hover,.furniture-drop-content a:hover,.electronics-drop-content a:hover,.home-drop-content a:hover,.kids-drop-content a:hover,.sports-drop-content a:hover {
   color:  #0083ca;
 }

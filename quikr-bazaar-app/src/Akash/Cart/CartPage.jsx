@@ -16,7 +16,7 @@ import { useEffect } from "react";
 
 import { Footer } from "../../Mushtaq/Footer";
 
-// import { cartData } from './_data'
+import { cartData } from './_data'
 import WithSubnavigation from './../../Mushtaq/WithSubNavigation';
 
 export const CartPage = () => {
@@ -72,7 +72,7 @@ export const CartPage = () => {
             flex="2"
           >
             <Heading fontSize="2xl" fontWeight="extrabold">
-              Shopping Cart (3 items)
+              {`Shopping Cart: ${cart.length} Items`}
             </Heading>
 
             <Stack spacing="6">
