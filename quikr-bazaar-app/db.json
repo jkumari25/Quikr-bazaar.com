@@ -1,14 +1,6 @@
 {
   "cart": [
     {
-      "id": 1,
-      "price": 16000,
-      "currency": "INR",
-      "name": "REALME X2 PRO",
-      "quantity": 1,
-      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230105164450-36518.png"
-    },
-    {
       "id": 3,
       "price": 17500,
       "currency": "INR",
@@ -23,6 +15,14 @@
       "name": "Google pixel a premium 6 pro model 12gb ram 5G 128",
       "quantity": 1,
       "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230111113302-60543.png"
+    },
+    {
+      "id": 52,
+      "price": 5999,
+      "currency": "INR",
+      "name": "IPHONE 6 64GB GRAY MOBILE...",
+      "quantity": 1,
+      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230102211034-37607.png"
     }
   ]
 }
