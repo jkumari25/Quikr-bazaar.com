@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="html5" />
 </p>
 
-<h3 align="center"><a href="https://cute-llama-5d319b.netlify.app/"><strong><< Live Project Link >></strong></a></h3>
+<h3 align="center"><a href="https://cute-llama-5d319b.netlify.app/"><strong><< Live Project Preview >></strong></a></h3>
 
 <br/>
 
