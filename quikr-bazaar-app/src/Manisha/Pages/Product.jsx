@@ -6,8 +6,8 @@ import ProductList from "../Componets/ProductList";
 
 const Product = () => {
   const columns = useBreakpointValue({
-    base: "80%",
-    md: "80%",
+    base: "95%",
+    md: "95%",
     lg: "25% 70%",
   });
 
@@ -16,8 +16,8 @@ const Product = () => {
       <WithSubnavigation/>
       <SimpleGrid
         backgroundColor="#f3f3f3"
-        // border={"2px solid brown"}
-        mt="6rem"
+        //border={"2px solid brown"}
+        mt="4rem"
         gridTemplateColumns={columns}
       >
         <FilterComp />

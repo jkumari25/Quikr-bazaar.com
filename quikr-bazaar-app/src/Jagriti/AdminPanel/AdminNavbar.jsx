@@ -38,6 +38,7 @@ import {
 import img from "../../Mushtaq/rapid_grab.jpg";
 import { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 // import { useEffect } from "react";
 
 const AdminNavbar = ({ setShowPage }) => {
@@ -254,25 +255,7 @@ const AdminNavbar = ({ setShowPage }) => {
                         value={form.title}
                       />
                     </FormControl>
-                    {/* <FormControl mt={4}>
-                      <FormLabel>Product Brand</FormLabel>
-                      <Input
-                        placeholder="Add Brand"
-                        name="price"
-                        onChange={handleChange}
-                        value={form.price}
-                      />
-                    </FormControl> */}
-          
-                    {/* <FormControl mt={4}>
-                      <FormLabel>Product M.R.P</FormLabel>
-                      <Input
-                        placeholder="Add M.R.P"
-                        name="mrp"
-                        onChange={handleChange}
-                        value={form.mrp}
-                      />
-                    </FormControl> */}
+                    
                     <FormControl mt={4}>
                       <FormLabel>Product Price</FormLabel>
                       <Input
@@ -282,24 +265,7 @@ const AdminNavbar = ({ setShowPage }) => {
                         value={form.price}
                       />
                     </FormControl>
-                    {/* <FormControl mt={4}>
-                      <FormLabel>Product color</FormLabel>
-                      <Input
-                        placeholder="Add Color"
-                        name="color"
-                        onChange={handleChange}
-                        value={form.color}
-                      />
-                    </FormControl> */}
-                    {/* <FormControl mt={4}>
-                      <FormLabel>Product TOT IMG</FormLabel>
-                      <Input
-                        placeholder="Add TOT IMG"
-                        name="totimg"
-                        onChange={handleChange}
-                        value={form.totimg}
-                      />
-                    </FormControl> */}
+                    
                     <FormControl mt={4}>
                       <FormLabel>Category</FormLabel>
                       <Input
@@ -365,7 +331,7 @@ const AdminNavbar = ({ setShowPage }) => {
               <VisuallyHidden>Notifications</VisuallyHidden>
             </chakra.a>
 
-            <Avatar size="md" name="Rapid-Grab" src={img} />
+            <Link to={"/"}><Avatar size="md" name="Rapid-Grab" src={img} /></Link>
           </HStack>
         </Flex>
       </chakra.header>

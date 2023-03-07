@@ -7,8 +7,8 @@ export const DropDownMenu = () => {
   return (
     <Flex className={styles.container} display={["none","none","none","none","flex"]}>
       <Box className={styles["mobile-drop"]}>
-        <Button className={styles["mobile-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
-          <Link to={"#"}>MOBILES</Link>
+        <Button bg={"none"} _hover={{background:"#008BCF",borderRadius:"none"}} className={styles["mobile-drop-btn"]}>
+          <Link to={"/product"}>MOBILES</Link>
           <FiChevronDown />
         </Button>
 
@@ -45,7 +45,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <p>Shop By Choice</p>
               <br /> <br />
-              <Link to={"#"}>"p"G Ready</Link>
+              <Link to={"#"}>4G Ready</Link>
               <br />
               <Link to={"#"}>Selfie Phones</Link>
               <br />
@@ -60,7 +60,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <Link to={"#"}>Android Tablets</Link>
               <br />
-              <Link to={"#"}>"p"G Tablets</Link>
+              <Link to={"#"}>4G Tablets</Link>
               <br />
               <Link to={"#"}>Apple Tablets</Link>
               <br />
@@ -97,7 +97,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["furniture-drop"]}>
-        <Button className={styles["furniture-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
+        <Button className={styles["furniture-drop-btn"]} bg={"none"} _hover={{background:"#008BCF",borderRadius:"none"}}>
           <Link to={"#"}>FURNITURE & DECOR</Link>
           <FiChevronDown />
         </Button>
@@ -135,7 +135,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <p>Shop By Choice</p>
               <br /> <br />
-              <Link to={"#"}>"p"G Ready</Link>
+              <Link to={"#"}>4G Ready</Link>
               <br />
               <Link to={"#"}>Selfie Phones</Link>
               <br />
@@ -150,7 +150,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <Link to={"#"}>Android Tablets</Link>
               <br />
-              <Link to={"#"}>"p"G Tablets</Link>
+              <Link to={"#"}>4G Tablets</Link>
               <br />
               <Link to={"#"}>Apple Tablets</Link>
               <br />
@@ -187,7 +187,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["electronics-drop"]}>
-        <Button className={styles["electronics-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
+        <Button bg={"none"} _hover={{background:"#008BCF",borderRadius:"none"}} className={styles["electronics-drop-btn"]}>
           <Link to={"#"}>ELECTRONICS </Link>
           <FiChevronDown />
         </Button>
@@ -205,7 +205,7 @@ export const DropDownMenu = () => {
               <br />
               <Link to={"#"}>Used Iphone 6</Link>
               <br />
-              <Link to={"#"}>Used Redmi Note "p"</Link>
+              <Link to={"#"}>Used Redmi Note</Link>
               <br />
             </Box>
 
@@ -225,7 +225,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <p>Shop By Choice</p>
               <br /> <br />
-              <Link to={"#"}>"p"G Ready</Link>
+              <Link to={"#"}>4G Ready</Link>
               <br />
               <Link to={"#"}>Selfie Phones</Link>
               <br />
@@ -240,7 +240,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <Link to={"#"}>Android Tablets</Link>
               <br />
-              <Link to={"#"}>"p"G Tablets</Link>
+              <Link to={"#"}>4G Tablets</Link>
               <br />
               <Link to={"#"}>Apple Tablets</Link>
               <br />
@@ -277,7 +277,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["home-drop"]}>
-        <Button className={styles["home-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
+        <Button bg={"none"} _hover={{background:"#008BCF",borderRadius:"none"}} className={styles["home-drop-btn"]}>
           <Link to={"#"}>HOME APPLIANCES </Link>
           <FiChevronDown />
         </Button>
@@ -295,7 +295,7 @@ export const DropDownMenu = () => {
               <br />
               <Link to={"#"}>Used Iphone 6</Link>
               <br />
-              <Link to={"#"}>Used Redmi Note "p"</Link>
+              <Link to={"#"}>Used Redmi Note</Link>
               <br />
             </Box>
 
@@ -315,7 +315,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <p>Shop By Choice</p>
               <br /> <br />
-              <Link to={"#"}>"p"G Ready</Link>
+              <Link to={"#"}>4G Ready</Link>
               <br />
               <Link to={"#"}>Selfie Phones</Link>
               <br />
@@ -330,7 +330,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <Link to={"#"}>Android Tablets</Link>
               <br />
-              <Link to={"#"}>"p"G Tablets</Link>
+              <Link to={"#"}>4G Tablets</Link>
               <br />
               <Link to={"#"}>Apple Tablets</Link>
               <br />
@@ -367,7 +367,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["kids-drop"]}>
-        <Button className={styles["kids-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
+        <Button bg={"none"} _hover={{background:"#008BCF",borderRadius:"none"}} className={styles["kids-drop-btn"]}>
           <Link to={"#"}>KIDS & TOYS </Link>
           <FiChevronDown />
         </Button>
@@ -385,7 +385,7 @@ export const DropDownMenu = () => {
               <br />
               <Link to={"#"}>Used Iphone 6</Link>
               <br />
-              <Link to={"#"}>Used Redmi Note "p"</Link>
+              <Link to={"#"}>Used Redmi Note</Link>
               <br />
             </Box>
 
@@ -405,7 +405,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <p>Shop By Choice</p>
               <br /> <br />
-              <Link to={"#"}>"p"G Ready</Link>
+              <Link to={"#"}>4G Ready</Link>
               <br />
               <Link to={"#"}>Selfie Phones</Link>
               <br />
@@ -420,7 +420,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <Link to={"#"}>Android Tablets</Link>
               <br />
-              <Link to={"#"}>"p"G Tablets</Link>
+              <Link to={"#"}>4G Tablets</Link>
               <br />
               <Link to={"#"}>Apple Tablets</Link>
               <br />
@@ -457,7 +457,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["sports-drop"]}>
-        <Button className={styles["sports-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
+        <Button bg={"none"} _hover={{background:"#008BCF",borderRadius:"none"}} className={styles["sports-drop-btn"]}>
           <Link to={"#"}>SPORTS, HOBBIES & FASHION</Link>
           <FiChevronDown />
         </Button>
@@ -475,7 +475,7 @@ export const DropDownMenu = () => {
               <br />
               <Link to={"#"}>Used Iphone 6</Link>
               <br />
-              <Link to={"#"}>Used Redmi Note "p"</Link>
+              <Link to={"#"}>Used Redmi Note</Link>
               <br />
             </Box>
 
@@ -495,7 +495,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <p>Shop By Choice</p>
               <br /> <br />
-              <Link to={"#"}>"p"G Ready</Link>
+              <Link to={"#"}>4G Ready</Link>
               <br />
               <Link to={"#"}>Selfie Phones</Link>
               <br />
@@ -510,7 +510,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <Link to={"#"}>Android Tablets</Link>
               <br />
-              <Link to={"#"}>"p"G Tablets</Link>
+              <Link to={"#"}>4G Tablets</Link>
               <br />
               <Link to={"#"}>Apple Tablets</Link>
               <br />
@@ -547,7 +547,7 @@ export const DropDownMenu = () => {
       </Box>
 
       <Box className={styles["sports-drop"]}>
-        <Button className={styles["sports-drop-btn"]} bg="none" _hover={{background:"#008BCF",color:"white",borderRadius:"none"}}>
+        <Button bg={"none"} _hover={{background:"#008BCF",borderRadius:"none"}} className={styles["sports-drop-btn"]}>
           <Link to={"#"}>LAPTOP ACCESSORIES </Link>
           <FiChevronDown />
         </Button>
@@ -565,7 +565,7 @@ export const DropDownMenu = () => {
               <br />
               <Link to={"#"}>Used Iphone 6</Link>
               <br />
-              <Link to={"#"}>Used Redmi Note "p"</Link>
+              <Link to={"#"}>Used Redmi Note</Link>
               <br />
             </Box>
 
@@ -585,7 +585,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <p>Shop By Choice</p>
               <br /> <br />
-              <Link to={"#"}>"p"G Ready</Link>
+              <Link to={"#"}>4G Ready</Link>
               <br />
               <Link to={"#"}>Selfie Phones</Link>
               <br />
@@ -600,7 +600,7 @@ export const DropDownMenu = () => {
               <br /> <br />
               <Link to={"#"}>Android Tablets</Link>
               <br />
-              <Link to={"#"}>"p"G Tablets</Link>
+              <Link to={"#"}>4G Tablets</Link>
               <br />
               <Link to={"#"}>Apple Tablets</Link>
               <br />

@@ -23,7 +23,7 @@
   border: 1px solid rgba(0,0,0,.15);
   margin: 0;
   margin-left: 10rem;
-  box-shadow: 0 2px 12px rgb(0 0 0 / 18%);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   display: none;
 }
 .furniture-drop-content{
@@ -37,7 +37,7 @@
     border: 1px solid rgba(0,0,0,.15);
     margin: 0;
     margin-left: 10rem;
-    box-shadow: 0 2px 12px rgb(0 0 0 / 18%);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     display: none;
 }
 
@@ -52,7 +52,7 @@
     border: 1px solid rgba(0,0,0,.15);
     margin: 0;
     margin-left: 10rem;
-    box-shadow: 0 2px 12px rgb(0 0 0 / 18%);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     display: none;
 }
 .home-drop-content{
@@ -66,7 +66,7 @@
     border: 1px solid rgba(0,0,0,.15);
     margin: 0;
     margin-left: 10rem;
-    box-shadow: 0 2px 12px rgb(0 0 0 / 18%);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     display: none;
 }
 .kids-drop-content{
@@ -80,7 +80,7 @@
     border: 1px solid rgba(0,0,0,.15);
     margin: 0;
     margin-left: 10rem;
-    box-shadow: 0 2px 12px rgb(0 0 0 / 18%);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     display: none;
 }
 .sports-drop-content{
@@ -94,7 +94,7 @@
     border: 1px solid rgba(0,0,0,.15);
     margin: 0;
     margin-left: 10rem;
-    box-shadow: 0 2px 12px rgb(0 0 0 / 18%);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     display: none;
 }
 .mobile-drop:hover .mobile-drop-content, .furniture-drop:hover .furniture-drop-content, .electronics-drop:hover .electronics-drop-content, .home-drop:hover .home-drop-content, .kids-drop:hover .kids-drop-content, .sports-drop:hover .sports-drop-content {
@@ -106,7 +106,4 @@
   font-weight: lighter;
   font-size: 12px;
   font-family: ProximaNova-bold,Arial,Helvetica,sans-serif;
-}
-.mobile-drop-content a:hover,.furniture-drop-content a:hover,.electronics-drop-content a:hover,.home-drop-content a:hover,.kids-drop-content a:hover,.sports-drop-content a:hover {
-  color:  #0083ca;
 }

@@ -72,7 +72,7 @@ export const CartPage = () => {
             flex="2"
           >
             <Heading fontSize="2xl" fontWeight="extrabold">
-              {`Shopping Cart: ${cart.length} Items`}
+              {`Shopping Cart: ${cart.length} Item`}
             </Heading>
 
             <Stack spacing="6">
