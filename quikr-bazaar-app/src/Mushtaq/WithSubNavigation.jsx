@@ -33,7 +33,6 @@ export default function WithSubnavigation() {
     <Box
       margin="auto"
       backgroundColor="white"
-      //border={"2px solid green"}
       top="0"
       position="fixed"
       left={"0"}
