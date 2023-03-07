@@ -73,8 +73,7 @@ export default function WithSubnavigation() {
           ></Text>
 
           <Flex
-            //border={"2px solid blue"}
-            display={{ base: "none", md: "flex" }}
+            display = {{ base: "none", md: "flex" }}
             justifyContent="center"
             alignItems={"center"}
             margin="auto"
