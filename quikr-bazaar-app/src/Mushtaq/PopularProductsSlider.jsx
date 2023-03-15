@@ -127,5 +127,3 @@ const PopularProductsSlider = () => {
 };
 
 export default PopularProductsSlider;
-
-
