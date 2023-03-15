@@ -114,6 +114,7 @@ const productsAr = [
     title: "Samsung",
   },
 ];
+
 export const MobileAndTabletsSlider = () => {
   return (
     <Box

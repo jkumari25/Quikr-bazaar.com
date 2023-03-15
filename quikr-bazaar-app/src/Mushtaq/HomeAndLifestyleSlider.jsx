@@ -170,7 +170,7 @@ export const HomeAndLifestyleSlider = () => {
                     <Spacer />
                     <Box>{el.city}</Box>
                   </Flex>
-                  <Button className={styles.view} colorScheme="teal" variant="outline">
+                  <Button colorScheme="teal" variant="outline">
                     View
                   </Button>
                 </Box>

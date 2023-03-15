@@ -1,6 +1,7 @@
 import { Stack, useColorModeValue } from "@chakra-ui/react";
 import { MobileNavItem, NAV_ITEMS } from "./MobileNavItem";
 export const MobileNav = () => {
+  
   return (
     <Stack
       bg={useColorModeValue("white", "gray.800")}

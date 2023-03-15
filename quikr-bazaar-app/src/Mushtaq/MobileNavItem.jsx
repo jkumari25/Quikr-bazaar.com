@@ -9,9 +9,10 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 
+
 export const MobileNavItem = ({ label, children, href }) => {
   const { isOpen, onToggle } = useDisclosure();
-
+  
   return (
     <Stack spacing={4} onClick={children && onToggle}>
       <Flex
@@ -63,42 +64,64 @@ export const MobileNavItem = ({ label, children, href }) => {
 };
 
 export const NAV_ITEMS = [
+  
   {
-    label: "Inspiration",
+    label: "Admin",
+    href: "/adminlogin",
+  },
+  {
+    label: "Login/Register",
+    href: "/signup",
+  },
+  {
+    label: "Mobile & Tablets",
     children: [
       {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
+        label: "Used Mobiles",
+        href: "/product",
+      },
+      {
+        label: "Tablets",
         href: "#",
       },
       {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
+        label: "Accessories",
+        href: "#",
+      },
+      {
+        label: "Wearables",
+        href: "#",
+      },
+      {
+        label: "View All",
         href: "#",
       },
     ],
   },
   {
-    label: "Find Work",
+    label: "Home & Lifestyle",
     children: [
       {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
+        label: "Washing Machines",
         href: "#",
       },
       {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
+        label: "Refrigerators",
         href: "#",
       },
     ],
   },
   {
-    label: "Learn Design",
-    href: "#",
-  },
-  {
-    label: "Hire Designers",
-    href: "#",
+    label: "Electronics & Appliances",
+    children: [
+      {
+        label: "Televisions",
+        href: "#",
+      },
+      {
+        label: "Cameras",
+        href: "#",
+      },
+    ],
   },
 ];

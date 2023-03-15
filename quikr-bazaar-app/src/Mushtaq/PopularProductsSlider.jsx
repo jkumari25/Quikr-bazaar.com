@@ -14,7 +14,7 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
+    items: 3,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -87,18 +87,10 @@ const productsAr = [
 
 const PopularProductsSlider = () => {
   return (
-    <Box>
-      <Box
-        style={{
-          textAlign: "left",
-          marginLeft: "9.6rem",
-          marginTop: "1rem",
-          color: "black",
-          fontWeight: "bold",
-        }}
-      >
-        <Text>Most Popular Products</Text>
-      </Box>
+    <>
+      
+        <Text mt={{base:"6rem",sm:"6rem",md:"8rem",lg:"8rem",xl:"1rem"}} textAlign={["left"]} ml={{base:"3rem",sm:"3rem",md:"5rem",lg:"6rem",xl:"9.6rem"}}>Most Popular Products</Text>
+      
       <Box
         position={"relative"}
         zIndex="1"
@@ -122,8 +114,10 @@ const PopularProductsSlider = () => {
           })}
         </Carousel>
       </Box>
-    </Box>
+    </>
   );
 };
 
 export default PopularProductsSlider;
+
+
