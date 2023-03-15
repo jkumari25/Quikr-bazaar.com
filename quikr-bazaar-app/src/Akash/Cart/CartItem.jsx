@@ -28,6 +28,7 @@ const QuantitySelect = (props) => {
     </Select>
   );
 };
+
 export const CartItem = (props) => {
   const dispatch = useDispatch();
 

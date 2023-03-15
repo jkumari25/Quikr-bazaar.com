@@ -69,8 +69,8 @@ export const DesktopNav = () => {
           />
           <Input type="text" placeholder="Search Products" />
 
-          <InputRightElement width={"10%"} bg="skyblue">
-            <CiSearch />
+          <InputRightElement width={"10%"} bg="#008BCF" color={"white"}>
+            <CiSearch size={"20px"}/>
           </InputRightElement>
         </InputGroup>
       </HStack>

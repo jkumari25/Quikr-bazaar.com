@@ -17,6 +17,7 @@ const Product = () => {
       <SimpleGrid
         backgroundColor="#f3f3f3"
         // border={"2px solid brown"}
+        mt="6rem"
         gridTemplateColumns={columns}
       >
         <FilterComp />
