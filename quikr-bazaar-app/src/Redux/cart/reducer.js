@@ -21,7 +21,7 @@ export const reducer = (state = InitialState,action) => {
             return {
                 ...state,
                 isLoading:false,
-                // cart:{...state.cart,payload}
+                cart:{...state.cart,payload}
             }
 
             case types.ADD_TO_CART_FAILURE:

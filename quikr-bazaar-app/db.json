@@ -1,28 +1,20 @@
 {
   "cart": [
     {
-      "id": 3,
-      "price": 17500,
+      "id": 5,
+      "price": 41000,
       "currency": "INR",
-      "name": "SAMSUNG S20 FE 8/128",
+      "name": "IPHONE 12",
       "quantity": 1,
-      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20221227174342-12163.png"
+      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230108080113-3375.png"
     },
     {
-      "id": 7,
-      "price": 36000,
+      "id": 8,
+      "price": 11998,
       "currency": "INR",
-      "name": "Google pixel a premium 6 pro model 12gb ram 5G 128",
+      "name": "Samsung S10E galaxy to Galaxy S20",
       "quantity": 1,
-      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230111113302-60543.png"
-    },
-    {
-      "id": 52,
-      "price": 5999,
-      "currency": "INR",
-      "name": "IPHONE 6 64GB GRAY MOBILE...",
-      "quantity": 1,
-      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230102211034-37607.png"
+      "imageUrl": "https://zamroo.s3.ap-south-1.amazonaws.com/images/product-images/mobiles-tablets/mobile-phones/large/20230111113755-23350.png"
     }
   ]
 }
